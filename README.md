@@ -19,11 +19,11 @@ Main repository for our ITAI 2376 group projects.
 Comparative analysis of open-source and self-hosted AI infrastructure (Hugging Face Transformers) versus proprietary cloud APIs (OpenAI GPT-4).
 
 **Quick Links:**
-- [?? View Final Report](A02-HuggingFace-vs-OpenAI/report/A02b_DataProxy_ElijahRaines_ITA2376.pdf)
-- [?? View Presentation](A02-HuggingFace-vs-OpenAI/presentation/A02a_DataProxy_ElijahRaines_ITA2376.pptx)
-- [?? View Contribution Journal](A02-HuggingFace-vs-OpenAI/contribution-journal/Contribution_Journal.pdf)
-- [?? View References](A02-HuggingFace-vs-OpenAI/references/sources.md)
-- [?? Full Project Details](A02-HuggingFace-vs-OpenAI/)
+- [📄 View Final Report](A02-HuggingFace-vs-OpenAI/report/A02b_DataProxy_ElijahRaines_ITA2376.pdf)
+- [🎯 View Presentation](A02-HuggingFace-vs-OpenAI/presentation/A02a_DataProxy_ElijahRaines_ITA2376.pptx)
+- [📋 View Contribution Journal](A02-HuggingFace-vs-OpenAI/contribution-journal/Contribution_Journal.pdf)
+- [📚 View References](A02-HuggingFace-vs-OpenAI/references/sources.md)
+- [📖 Full Project Details](A02-HuggingFace-vs-OpenAI/)
 
 ---
 
