@@ -16,7 +16,7 @@ The goal is to analyze the trade-offs between these approaches across multiple d
 
 ### Required Deliverables
 
-1. **[📄 View Final Report PDF](report/A02b_DataProxy_ElijahRaines_ITA2376.pdf)** ← Main comparative analysis (~550 words, 1 page)
+1. **[📄 View Final Report](report/A02b_DataProxy_ElijahRaines_ITA2376.pdf)** ← Main comparative analysis (~550 words, 1 page)
 
 2. **[🎯 View Presentation](presentation/A02a_DataProxy_ElijahRaines_ITA2376.pptx)** ← Slide presentation
 
@@ -24,7 +24,7 @@ The goal is to analyze the trade-offs between these approaches across multiple d
 
 ### Supporting Materials
 
-- **[📚 References & Sources](references/sources.md)** - Bibliographic citations
+- **[📚 View References](references/sources.md)** - Bibliographic citations
 
 ## Repository Structure
 
