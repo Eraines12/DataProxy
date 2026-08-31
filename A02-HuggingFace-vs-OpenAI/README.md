@@ -4,10 +4,11 @@ Comparative analysis of open-source and self-hosted AI infrastructure (Hugging F
 
 ## Deliverables
 
-- [📄 View Final Report](report/A02b_DataProxy_ElijahRaines_ITA2376.pdf)
-- [🎯 View Presentation](presentation/A02a_DataProxy_ElijahRaines_ITA2376.pptx)
-- [📋 View Contribution Journal](contribution-journal/Contribution_Journal.pdf)
-- [📚 View References](references/sources.md)
+- [?? View Final Report](report/A02b_DataProxy_ElijahRaines_ITA2376.pdf)
+- [?? View Presentation PDF](presentation/A02a_DataProxy_ElijahRaines_ITA2376.pdf)
+- [?? Download PowerPoint](presentation/A02a_DataProxy_ElijahRaines_ITA2376.pptx)
+- [?? View Contribution Journal](contribution-journal/Contribution_Journal.pdf)
+- [?? View References](references/sources.md)
 
 ## Team Members
 
