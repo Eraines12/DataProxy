@@ -61,7 +61,7 @@ https://huggingface.co/docs/transformers/index
 OpenAI. "GPT-4." OpenAI Platform, 2024.
 https://openai.com/gpt-4
 
-[SOURCE NEEDED] - JPMorgan Chase transformer models case study
-[SOURCE NEEDED] - Duolingo GPT-4 language learning implementation details
+https://aclanthology.org/2024.acl-long.463/?utm_source=chatgpt.com - JPMorgan Chase transformer models case study
+https://openai.com/index/duolingo/?utm_source=chatgpt.com - Duolingo GPT-4 language learning implementation details
 
 ================================================================================
