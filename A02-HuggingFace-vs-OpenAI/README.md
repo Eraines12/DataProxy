@@ -12,10 +12,11 @@ Comparative analysis of open-source and self-hosted AI infrastructure (Hugging F
 
 ## Team Members
 
+- Elijah Raines (Team Leader)
 - Brandon Matias
-- Elijah Raines
 - Justin Davis
 - Jonah Joseph
+- Osemudia Ogedengbe
 
 ## Course
 ITAI 2376 - Data Proxy Team Project

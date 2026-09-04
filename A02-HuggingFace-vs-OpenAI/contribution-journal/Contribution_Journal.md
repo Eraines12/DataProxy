@@ -2,7 +2,7 @@
 
 **Project:** Hugging Face Transformers vs. OpenAI GPT-4 API  
 **Course:** ITAI 2376  
-**Team Members:** Brandon Matias, Elijah Raines, Justin Davis, Jonah Joseph
+**Team Members:** Elijah Raines (Team Leader), Brandon Matias, Justin Davis, Jonah Joseph, Osemudia Ogedengbe
 
 ---
 
@@ -95,6 +95,19 @@
 
 ---
 
+## Osemudia Ogedengbe
+**Role(s): Team Support / Assignment Review**
+
+**Contribution Status**
+- Joined the DataProxy team for the A02 assignment
+- Reviewed the team project materials and assignment requirements
+- Contribution details will be updated with the exact work she completes for the team
+
+**Evidence**
+- Specific file, research, slide, or review contribution should be added after completion
+
+---
+
 ## Project Milestones
 
 - [ ] Research phase completed
@@ -114,4 +127,3 @@
 - Use this journal to track individual work and ensure fair distribution of tasks
 - Update regularly as work progresses
 - Include links or file references for all major work items
-
