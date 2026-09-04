@@ -96,15 +96,20 @@
 ---
 
 ## Osemudia Ogedengbe
-**Role(s): Team Support / Assignment Review**
+**Role(s): Team Coordination & Project Review**
 
-**Contribution Status**
-- Joined the DataProxy team for the A02 assignment
-- Reviewed the team project materials and assignment requirements
-- Contribution details will be updated with the exact work she completes for the team
+### Key Contributions
+- Joined the DataProxy project after confusion about the official team roster
+- Coordinated with the team so she could be included in the correct A02 project
+- Reviewed the current project materials and submission structure
+- Helped confirm team participation before final submission
 
-**Evidence**
-- Specific file, research, slide, or review contribution should be added after completion
+### Contribution Evidence
+| Task | Description | Evidence |
+|---|---|---|
+| Team Coordination | Joined the existing DataProxy project and coordinated with the team | Team communication |
+| Project Review | Reviewed the current A02 materials and deliverables | A02 project repository |
+| Submission Coordination | Helped confirm team participation before submission | Team communication |
 
 ---
 
