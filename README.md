@@ -7,10 +7,11 @@ Main repository for our ITAI 2376 group projects.
 
 ## Team Members
 
+- Elijah Raines (Team Leader)
 - Brandon Matias
-- Elijah Raines
 - Justin Davis
 - Jonah Joseph
+- Osemudia Ogedengbe
 
 ## Projects
 
