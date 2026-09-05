@@ -12,6 +12,7 @@ Main repository for our ITAI 2376 group projects.
 - Justin Davis
 - Jonah Joseph
 - Osemudia Ogedengbe
+- Samantha Mireles
 
 ## Projects
 
