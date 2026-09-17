@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A simple game that teaches AI clues, weights, bias, and activation.">
+  <title>Wizards vs Aliens</title>
+  <style>
+    :root {
+      --ink: #ffffff;
+      --night: #130b38;
+      --purple: #2c1760;
+      --panel: #38246f;
+      --yellow: #ffd85a;
+      --pink: #ff7eb6;
+      --green: #64e3a0;
+      --red: #ff8c8c;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      margin: 0;
+      color: var(--ink);
+      font-family: "Trebuchet MS", Arial, sans-serif;
+      background: radial-gradient(circle at top, #4a2f8d 0, var(--night) 58%);
+    }
+
+    .game {
+      width: min(960px, 100%);
+      min-height: 100vh;
+      margin: 0 auto;
+      padding: 24px 18px 30px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      color: var(--yellow);
+      font-size: clamp(2rem, 7vw, 4.5rem);
+      letter-spacing: 0.06em;
+      text-shadow: 3px 3px 0 #200c49;
+    }
+
+    .tagline {
+      margin: 0 0 16px;
+      font-size: clamp(1rem, 3vw, 1.25rem);
+    }
+
+    .characters {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 20px;
+      max-width: 680px;
+      margin: 0 auto 14px;
+    }
+
+    .character {
+      width: min(30vw, 180px);
+      margin: 0;
+      font-weight: bold;
+      font-size: clamp(1rem, 3vw, 1.25rem);
+    }
+
+    .character img {
+      display: block;
+      width: 100%;
+      height: min(25vw, 150px);
+      margin-bottom: 8px;
+      object-fit: contain;
+      object-position: bottom;
+      filter: drop-shadow(0 7px 4px rgba(0, 0, 0, 0.35));
+    }
+
+    .vs {
+      padding-bottom: 40px;
+      color: var(--pink);
+      font-size: clamp(1.5rem, 5vw, 2.5rem);
+      font-weight: bold;
+    }
+
+    .round-card {
+      max-width: 680px;
+      min-height: 300px;
+      margin: 0 auto;
+      padding: clamp(22px, 5vw, 42px);
+      border: 4px solid #7866b7;
+      border-radius: 28px;
+      background: rgba(56, 36, 111, 0.96);
+      box-shadow: 0 12px 0 #170c37;
+    }
+
+    .round-label {
+      margin: 0 0 12px;
+      color: var(--yellow);
+      font-size: 1.1rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    h2 {
+      margin: 0 0 22px;
+      font-size: clamp(1.6rem, 5vw, 2.5rem);
+      line-height: 1.18;
+    }
+
+    .details {
+      margin: 0 auto 22px;
+      font-size: clamp(1.25rem, 4vw, 1.7rem);
+      line-height: 1.75;
+    }
+
+    .rule {
+      display: inline-block;
+      margin: 0 auto 22px;
+      padding: 12px 20px;
+      border-radius: 16px;
+      background: #21134c;
+      font-size: clamp(1.05rem, 3.5vw, 1.45rem);
+      line-height: 1.7;
+    }
+
+    .answers {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+      max-width: 520px;
+      margin: 0 auto;
+    }
+
+    button {
+      min-height: 62px;
+      padding: 12px 16px;
+      border: 0;
+      border-radius: 16px;
+      color: #21134c;
+      background: var(--yellow);
+      box-shadow: 0 5px 0 #bd8d16;
+      cursor: pointer;
+      font: inherit;
+      font-size: clamp(1.15rem, 3.8vw, 1.5rem);
+      font-weight: bold;
+      transition: transform 0.15s, box-shadow 0.15s;
+    }
+
+    button:hover,
+    button:focus-visible {
+      transform: translateY(-2px);
+      outline: 3px solid #ffffff;
+      outline-offset: 3px;
+    }
+
+    button:active {
+      transform: translateY(3px);
+      box-shadow: 0 2px 0 #bd8d16;
+    }
+
+    .next-button,
+    .play-again {
+      display: none;
+      min-width: 190px;
+      margin: 20px auto 0;
+      color: #123321;
+      background: var(--green);
+      box-shadow: 0 5px 0 #238353;
+    }
+
+    .message {
+      min-height: 2.8em;
+      margin: 20px 0 0;
+      font-size: clamp(1.1rem, 3.5vw, 1.4rem);
+      font-weight: bold;
+      line-height: 1.4;
+    }
+
+    .correct {
+      color: var(--green);
+    }
+
+    .wrong {
+      color: var(--red);
+    }
+
+    .summary {
+      display: none;
+    }
+
+    .summary h2 {
+      color: var(--yellow);
+    }
+
+    .summary p {
+      margin: 0;
+      font-size: clamp(1.15rem, 3.8vw, 1.5rem);
+      line-height: 1.8;
+    }
+
+    footer {
+      margin-top: 28px;
+      color: var(--yellow);
+      font-size: clamp(1.25rem, 4vw, 1.8rem);
+      font-weight: bold;
+      letter-spacing: 0.04em;
+    }
+
+    @media (max-width: 460px) {
+      .game {
+        padding: 18px 12px 24px;
+      }
+
+      .characters {
+        gap: 8px;
+      }
+
+      .vs {
+        padding-bottom: 28px;
+      }
+
+      .answers {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="game">
+    <h1>WIZARDS VS ALIENS</h1>
+    <p class="tagline">Help the wizard learn how an AI makes a choice!</p>
+
+    <section class="characters" aria-label="The wizard faces the alien">
+      <figure class="character">
+        <img src="wizard.png" alt="Wizard">
+        <figcaption>WIZARD</figcaption>
+      </figure>
+      <div class="vs" aria-hidden="true">VS</div>
+      <figure class="character">
+        <img src="alien.png" alt="Alien">
+        <figcaption>ALIEN BOSS</figcaption>
+      </figure>
+    </section>
+
+    <section class="round-card" aria-live="polite">
+      <div id="game-round">
+        <p id="round-label" class="round-label"></p>
+        <h2 id="question"></h2>
+        <div id="details" class="details"></div>
+        <div id="rule" class="rule" hidden></div>
+        <div id="answers" class="answers"></div>
+        <p id="message" class="message"></p>
+        <button id="next-button" class="next-button" type="button">Next</button>
+      </div>
+
+      <div id="summary" class="summary">
+        <h2>🏆 You Beat the Alien!</h2>
+        <p>
+          ❤️ Clue = what the AI looks at<br>
+          ⭐ Weight = what matters most<br>
+          🎁 Bias = extra help<br>
+          🚦 Activation = the final rule
+        </p>
+        <button id="play-again" class="play-again" type="button">Play Again</button>
+      </div>
+    </section>
+
+    <footer>Look → Count → Choose</footer>
+  </main>
+
+  <script>
+    const rounds = [
+      {
+        label: "Round 1 - Clues",
+        question: "Which clue helps the wizard?",
+        details: "",
+        answers: [
+          { text: "❤️ Health", correct: true },
+          { text: "🍕 Pizza", correct: false }
+        ],
+        success: "Correct! Health is a clue the AI can use."
+      },
+      {
+        label: "Round 2 - Weights",
+        question: "Which clue matters more?",
+        details: "❤️ Health = ⭐⭐<br>🛡️ Armor = ⭐",
+        answers: [
+          { text: "❤️ Health", correct: true },
+          { text: "🛡️ Armor", correct: false }
+        ],
+        success: "Correct! More stars means it matters more. In AI, this is called a weight."
+      },
+      {
+        label: "Round 3 - Bias",
+        question: "How many stars does he have now?",
+        details: "Wizard has ⭐⭐<br>The wizard gets one bonus star 🎁⭐",
+        answers: [
+          { text: "⭐⭐", correct: false },
+          { text: "⭐⭐⭐", correct: true },
+          { text: "⭐⭐⭐⭐", correct: false }
+        ],
+        success: "Correct! The bonus star is like bias. It gives the AI one extra push."
+      },
+      {
+        label: "Round 4 - Activation",
+        question: "The wizard has ⭐⭐⭐. What should he do?",
+        details: "",
+        rule: "⭐⭐⭐ or more = ⚔️ ATTACK<br>⭐⭐ or less = 🛡️ WAIT",
+        answers: [
+          { text: "⚔️ ATTACK", correct: true },
+          { text: "🛡️ WAIT", correct: false }
+        ],
+        success: "Correct!"
+      }
+    ];
+
+    const roundLabel = document.getElementById("round-label");
+    const question = document.getElementById("question");
+    const details = document.getElementById("details");
+    const rule = document.getElementById("rule");
+    const answers = document.getElementById("answers");
+    const message = document.getElementById("message");
+    const nextButton = document.getElementById("next-button");
+    const gameRound = document.getElementById("game-round");
+    const summary = document.getElementById("summary");
+    const playAgain = document.getElementById("play-again");
+    let currentRound = 0;
+
+    function showRound() {
+      const round = rounds[currentRound];
+      roundLabel.textContent = round.label;
+      question.textContent = round.question;
+      details.innerHTML = round.details;
+      rule.innerHTML = round.rule || "";
+      rule.hidden = !round.rule;
+      message.textContent = "";
+      message.className = "message";
+      nextButton.style.display = "none";
+      answers.innerHTML = "";
+
+      round.answers.forEach((answer) => {
+        const button = document.createElement("button");
+        button.type = "button";
+        button.textContent = answer.text;
+        button.addEventListener("click", () => chooseAnswer(answer));
+        answers.appendChild(button);
+      });
+    }
+
+    function chooseAnswer(answer) {
+      if (answer.correct) {
+        message.textContent = rounds[currentRound].success;
+        message.className = "message correct";
+        answers.querySelectorAll("button").forEach((button) => {
+          button.disabled = true;
+        });
+        nextButton.style.display = "block";
+      } else {
+        message.textContent = "Try again.";
+        message.className = "message wrong";
+      }
+    }
+
+    nextButton.addEventListener("click", () => {
+      currentRound += 1;
+      if (currentRound === rounds.length) {
+        gameRound.style.display = "none";
+        summary.style.display = "block";
+        playAgain.style.display = "block";
+      } else {
+        showRound();
+      }
+    });
+
+    playAgain.addEventListener("click", () => {
+      currentRound = 0;
+      summary.style.display = "none";
+      playAgain.style.display = "none";
+      gameRound.style.display = "block";
+      showRound();
+    });
+
+    showRound();
+  </script>
+</body>
+</html>
