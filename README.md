@@ -31,11 +31,25 @@ Comparative analysis of open-source and self-hosted AI infrastructure (Hugging F
 
 ---
 
+### A03 - Neural Network Zoo
+
+**The CNN Eagle - Convolutional Neural Networks**
+
+Our team used an eagle to explain how a CNN learns visual patterns from images. The project covers convolution, filters, feature maps, pooling, flattening, backpropagation, and real-world CNN applications.
+
+#### Deliverables
+
+- [📊 Download PowerPoint](A03-Neural-Network-Zoo/presentation/A03_DataProxy_ElijahRaines_ITAI2376.pptx)
+- [📄 View Reflection Journal](A03-Neural-Network-Zoo/reflection-journal/A03_DataProxy_ElijahRaines_ReflectionJournal_ITAI2376.pdf)
+- [🧠 Try Interactive CNN Demo](https://teachablemachine.withgoogle.com/models/-4NXx_mH6/)
+- [📖 Full Project Details](A03-Neural-Network-Zoo/)
+
+---
+
 ## Future Projects
 
 Additional assignments will be added as separate folders:
 
-- A03-Project-Name/
 - A04-Project-Name/
 - A05-Project-Name/
 - ...
