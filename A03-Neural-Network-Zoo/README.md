@@ -25,6 +25,7 @@ This project covers:
 
 - [📊 Download PowerPoint](presentation/A03_DataProxy_ElijahRaines_ITAI2376.pptx)
 - [📄 View Reflection Journal](reflection-journal/A03_DataProxy_ElijahRaines_ReflectionJournal_ITAI2376.pdf)
+- [📝 View Contribution Journal](./contribution-journal/A03_DataProxy_ElijahRaines_Contribution_Journal_ITAI2376.pdf)
 - [🧠 Try Interactive CNN Demo](https://teachablemachine.withgoogle.com/models/-4NXx_mH6/)
 
 ## Main Takeaway

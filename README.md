@@ -41,6 +41,7 @@ Our team used an eagle to explain how a CNN learns visual patterns from images. 
 
 - [📊 Download PowerPoint](A03-Neural-Network-Zoo/presentation/A03_DataProxy_ElijahRaines_ITAI2376.pptx)
 - [📄 View Reflection Journal](A03-Neural-Network-Zoo/reflection-journal/A03_DataProxy_ElijahRaines_ReflectionJournal_ITAI2376.pdf)
+- [📝 View Contribution Journal](./A03-Neural-Network-Zoo/contribution-journal/A03_DataProxy_ElijahRaines_Contribution_Journal_ITAI2376.pdf)
 - [🧠 Try Interactive CNN Demo](https://teachablemachine.withgoogle.com/models/-4NXx_mH6/)
 - [📖 Full Project Details](A03-Neural-Network-Zoo/)
 
