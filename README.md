@@ -46,11 +46,24 @@ Our team used an eagle to explain how a CNN learns visual patterns from images. 
 
 ---
 
+### A04 - Weights, Bias, and Activation Functions
+
+**Wizards vs. Aliens**
+
+Our team created a Wizards vs. Aliens game to explain how a neural network makes a decision. The wizard studies clues such as health, armor, and how close the alien boss is before choosing whether to attack or wait.
+
+#### Deliverables
+
+- [📄 View A04 Assignment PDF](./A04-Weights-Bias-Activation/A04_DataProxy_Elijah_Raines_ITAI2376.pdf)
+- [🎮 Play the Wizards vs. Aliens Game](https://eraines12.github.io/DataProxy/Wizards-vs-Aliens-Game/)
+- [📖 Full Project Details](A04-Weights-Bias-Activation/)
+
+---
+
 ## Future Projects
 
 Additional assignments will be added as separate folders:
 
-- A04-Project-Name/
 - A05-Project-Name/
 - ...
 
