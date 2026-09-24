@@ -56,6 +56,7 @@ Our team created a Wizards vs. Aliens game to explain how a neural network makes
 #### Deliverables
 
 - [📄 View A04 Assignment PDF](./A04-Weights-Bias-Activation/A04_DataProxy_Elijah_Raines_ITAI2376.pdf)
+- [📝 View Contribution Journal](./A04-Weights-Bias-Activation/contribution-journal/A04_DataProxy_ElijahRaines_Contribution_Journal_ITAI2376.pdf)
 - [🎮 Play the Wizards vs. Aliens Game](https://eraines12.github.io/DataProxy/Wizards-vs-Aliens-Game/)
 - [📖 Full Project Details](A04-Weights-Bias-Activation/)
 
