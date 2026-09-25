@@ -22,6 +22,7 @@ The project also includes an interactive game and connects the lesson to real AI
 
 - [📄 View A04 Assignment PDF](A04_DataProxy_Elijah_Raines_ITAI2376.pdf)
 - [📝 View Contribution Journal](./contribution-journal/A04_DataProxy_ElijahRaines_Contribution_Journal_ITAI2376.pdf)
+- [📄 View Reflection Journal](./reflection-journal/A04_DataProxy_ElijahRaines_ReflectionJournal_ITAI2376.pdf)
 - [🎮 Play the Wizards vs. Aliens Game](https://eraines12.github.io/DataProxy/Wizards-vs-Aliens-Game/)
 
 This contribution journal explains each Team DataProxy member's role in the A04 Wizards vs. Aliens assignment, including the story and objective, clues, weights, bias, activation function, attack-or-wait decision, and interactive game.
