@@ -63,11 +63,25 @@ Our team created a Wizards vs. Aliens game to explain how a neural network makes
 
 ---
 
+### A05 - Analyzing Arrival Through the Lens of NLP
+
+**Arrival (2016) - Language, Communication, and Natural Language Processing**
+
+Team DataProxy analyzed how *Arrival* connects to Natural Language Processing. The project examines ambiguity, context, cultural differences, the "weapon" versus "tool" misunderstanding, methods used to learn the alien language, rule-based, statistical, and deep NLP, real-world language tools, and the importance of human judgment.
+
+#### Deliverables
+
+- [📄 View Written Report](./A05-Arrival-NLP/written-report/A05_DataProxy_%20ElijahRaines_%20ITAI%202376_WrittenReport.pdf)
+- [📓 View Reflection Journal](./A05-Arrival-NLP/reflection-journal/A05_DataProxy_ElijahRaines_ReflectionJournal_ITAI2376.pdf)
+- [📝 View Contribution Journal](./A05-Arrival-NLP/contribution-journal/A05_DataProxy_ElijahRaines_Contribution_Journal_ITAI2376.pdf)
+- [📖 Full Project Details](./A05-Arrival-NLP/)
+
+---
+
 ## Future Projects
 
 Additional assignments will be added as separate folders:
 
-- A05-Project-Name/
 - ...
 
 Each project will contain its own README with deliverables and links.
