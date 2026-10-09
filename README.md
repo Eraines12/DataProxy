@@ -78,11 +78,19 @@ Team DataProxy analyzed how *Arrival* connects to Natural Language Processing. T
 
 ---
 
-### Midterm - Diffusion Models
+### Midterm – Creating Images with Diffusion Models
 
-#### Deliverables
+**Fashion-MNIST Diffusion Model**
 
-- [📓 Completed Notebook](./Midterm-Diffusion-Models/completed-notebook/MD_Notebook_ElijahRaines_ITAI.pdf)
+[📓 View Completed Notebook](./Midterm-Diffusion-Models/completed-notebook/MD_Notebook_ElijahRaines_ITAI.pdf)
+
+[📊 View Analysis Report](./Midterm-Diffusion-Models/analysis-report/MD_Report_ElijahRaines_ITAI.pdf)
+
+[👥 View Contribution Journal](./Midterm-Diffusion-Models/contribution-journal/MD_DataProxy_ElijahRaines_Contribution_Journal_ITAI2376.pdf)
+
+[💭 View Reflection Journal](./Midterm-Diffusion-Models/reflection-journal/MD_DataProxy_ElijahRaines_Reflection_Journal_ITAI2376.pdf)
+
+[📁 View Full Project Details](./Midterm-Diffusion-Models/)
 
 ---
 
