@@ -78,6 +78,14 @@ Team DataProxy analyzed how *Arrival* connects to Natural Language Processing. T
 
 ---
 
+### Midterm - Diffusion Models
+
+#### Deliverables
+
+- [📓 Completed Notebook](./Midterm-Diffusion-Models/completed-notebook/MD_Notebook_ElijahRaines_ITAI.pdf)
+
+---
+
 ## Future Projects
 
 Additional assignments will be added as separate folders:
